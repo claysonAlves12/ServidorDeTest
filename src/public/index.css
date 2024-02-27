@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.title h1,#videosComTutoriais h1{
+.title h1{
  font-weight: 700;
  font-size:22px ;
  color:#7A7A7A ;
@@ -39,7 +39,6 @@
     font-size: 36px;
     line-height: 42px;
     color: #8C8E91;
-    margin: 0 0 0 10px;
 }
 
 .description_pagar{
@@ -56,37 +55,41 @@
 
 #videosComTutoriais{
    text-align: center;
-   margin-top: 100px;
+   margin-top: 80px;
 }
 
-.tutoriais {
-    cursor: pointer;
+#videosComTutoriais h1{
+ font-weight: 700;
+ font-size:22px ;
+ color:#7A7A7A ; 
+ margin-bottom:20px;
+}
+
+.tutoriais{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
 }
 
 .tutoriais p{
-    margin: 10px;
+    transition: .4s;
+    margin: -20px;
+    padding: 5px;
 }
 
 .tutoriais img {
-    position: relative;
-    top: -40px;
-    padding: 8px;
-    left: 400px;
+    position: flex;
+    margin-left: 10px;
 }
 
 .videoIframe {
     width: 0px;
     height: 0px;
-    margin: 0px 0;
     transition: .4s;
     overflow: hidden;
     opacity: 0;
+}
+
+.tutoriais.active p{
+    margin: 0;
 }
 
 .tutoriais.active .videoIframe {
@@ -94,7 +97,6 @@
     height: 500px;
     opacity: 1;
 }
-
 
 @media screen and (min-width: 800px) and (max-width:1200px){
     .passo_pagar img{
@@ -115,17 +117,13 @@
 
 }
 
-
 @media screen and (min-width: 600px) and (max-width:800px){
     .passo_pagar img{
         width: 100%;
         height: auto;
     }
-    .tutoriais img {
-        top: -40px;
-        padding: 8px;
-        left:30vh;
-    }
+
+
 
     .title p, #videosComTutoriais p{
         font-size: 25px; 
@@ -148,26 +146,21 @@
         width: 100%;
         height: auto;
     }
-    .tutoriais img {
-        width: 40px;
-        left: 80px;
-    }
 
     .description_pagar{
-        font-size: 15px;
+        font-size: 25px;
     }
 
     .title h1,#videosComTutoriais h1{
-        font-size:20px ;
+        font-size:30px ;
     }
        
     .title p, #videosComTutoriais p{
-        font-size: 20px; 
-          
+        font-size: 25px; 
     }
 
     #videosComTutoriais{
-        margin-top: 20px;
+        margin-top: 40px;
     }
    
     .tutoriais.active .videoIframe {
@@ -176,6 +169,8 @@
         opacity: 1;
     }
 }
+
+
 
 
 
