@@ -5,6 +5,10 @@
     font-family:'open sans' ,sans-serif;
 }
 
+main{
+    background-color: rgba(255, 0, 0, 0.274);
+}
+
 .title{
     text-align: center;
 }
@@ -101,6 +105,18 @@
         width: 100%;
         height: auto;
     }
+
+    .tutoriais img{
+        width: 5%;
+        height: auto;
+    }
+
+    
+    .tutoriais.active .videoIframe {
+        width: 700px;
+        height: 400px;
+    }
+
 }
 
 
@@ -110,13 +126,25 @@
         height: auto;
     }
     .tutoriais img {
-        left: 130px;
+        top: -40px;
+        padding: 8px;
+        left:30vh;
+    }
+
+    .title p, #videosComTutoriais p{
+        font-size: 25px; 
+          
+    }
+
+    .tutoriais{
+        padding: 0px;
     }
 
     .tutoriais.active .videoIframe {
-        width: 600px;
+        width: 500px;
         height: 400px;
     }
+
 }
 
 @media screen and (min-width: 0px) and (max-width:600px){
@@ -152,6 +180,7 @@
         opacity: 1;
     }
 }
+
 
 
 
