@@ -19,6 +19,7 @@
    font-size: 30px;
    font-weight: 700;
    color: #6C6D6D; 
+   
 }
 
 .line_pagar{
@@ -38,6 +39,7 @@
     font-size: 36px;
     line-height: 42px;
     color: #8C8E91;
+    margin: 0 0 0 10px;
 }
 
 .description_pagar{
@@ -49,6 +51,7 @@
     text-align: left;
     color: #5498FD;
     max-width: 500px;
+    padding: 10px;
 }
 
 #videosComTutoriais{
@@ -71,10 +74,10 @@
 }
 
 .tutoriais img {
-    position: absolute;
-    top: 25px;
+    position: relative;
+    top: -40px;
     padding: 8px;
-    right: 70px;
+    left: 400px;
 }
 
 .videoIframe {
@@ -91,6 +94,65 @@
     height: 500px;
     opacity: 1;
 }
+
+
+@media screen and (min-width: 800px) and (max-width:1200px){
+    .passo_pagar img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width:800px){
+    .passo_pagar img{
+        width: 100%;
+        height: auto;
+    }
+    .tutoriais img {
+        left: 130px;
+    }
+
+    .tutoriais.active .videoIframe {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:600px){
+    .passo_pagar img{
+        width: 100%;
+        height: auto;
+    }
+    .tutoriais img {
+        width: 40px;
+        left: 80px;
+    }
+
+    .description_pagar{
+        font-size: 15px;
+    }
+
+    .title h1,#videosComTutoriais h1{
+        font-size:20px ;
+    }
+       
+    .title p, #videosComTutoriais p{
+        font-size: 20px; 
+          
+    }
+
+    #videosComTutoriais{
+        margin-top: 20px;
+    }
+   
+    .tutoriais.active .videoIframe {
+        width: 400px;
+        height: 200px;
+        opacity: 1;
+    }
+}
+
 
 
 
